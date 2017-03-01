@@ -1,0 +1,63 @@
+/* CSS file */
+body{
+    margin: 0;
+}
+header, #HeaderBar{
+    background-color: #FF2473;
+    font-size: 30px;
+}
+header{
+    height: 100px;
+    color: white;
+    padding-left: 30px;
+}
+footer{
+    height:60px;
+    background-color: #FF2473;
+    
+    /*to stick to bottom code*/
+    position: fixed;
+    bottom: 0;
+}
+#HeaderBar{
+    margin-top: 10px;
+    height: 15px;
+}
+#content1{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#content2{
+}
+.box{
+    background-color: #7F3852;
+    height: 20vw;
+    width: 20vw;
+    margin: 10px;
+    float: left;
+    color: white;
+    text-align: center;
+    padding-top:2vw;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 2vw;
+    transition: all .2s ease-in-out;
+    box-shadow: 3px 2px 1px #888888;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+.boximg{
+    width:8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
