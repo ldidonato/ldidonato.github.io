@@ -1,6 +1,7 @@
 /* CSS file */
 body{
     margin: 0;
+    padding-bottom: 60px;
 }
 header, #HeaderBar{
     background-color: #FF2473;
@@ -16,8 +17,7 @@ footer{
     background-color: #FF2473;
     
     /*to stick to bottom code*/
-    position: fixed;
-    bottom: 0;
+    
 }
 #HeaderBar{
     margin-top: 10px;
@@ -26,6 +26,8 @@ footer{
 #content1{
     padding-left: 30px;
     padding-right: 30px;
+    box-shadow: 0px 24px 0px -20px #FF2473;
+    margin-bottom: 30px;
 }
 #content2{
 }
@@ -48,6 +50,20 @@ footer{
 }
 .boximg{
     width:8vw;
+}
+#headshot{
+    width: 22vw;
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 20%;
+}
+#summary{
+    padding-right: 30px;
+    font-size: 20px;
+}
+#summary h3{
+    color: #7F3852;
+    font-size: 30px;
 }
 
 
