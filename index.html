@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
     <meta charset="utf-8">
@@ -22,7 +21,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
 
   </head>
 
@@ -57,10 +56,11 @@
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
+            <img src="img/Headshot.jpg" class="headshot" alt="Headshot" width="350" height="350">
+            
           <h1 id="homeHeading">Lauren Ann DiDonato</h1>
           <hr>
-          <p>Enjoys designing and developing websites, as well as working with the UX/UI side of mobile applications. Previous experience as a CS student has helped when adding Javascript and PHP to projects to give them more depth. Enjoys learning from others and working in team focused environments. Would like to obtain a co- op in Web and Mobile Computing and is looking for Fall 2017, Spring 2018 and or Summer 2018</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About Me</a>
+          <p>Enjoys designing and developing websites, as well as working with the UX/UI side of mobile applications. Enjoys learning from others and working in team focused environments. Would like to obtain a co- op in Web and Mobile Computing and is looking for Fall 2017, Spring 2018 and or Summer 2018</p>
         </div>
       </div>
     </header>
@@ -68,11 +68,12 @@
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
+          <div class="mx-auto text-center">
+            <h2 class="section-heading text-white">About Lauren</h2>
             <hr class="light">
-            <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <p class="text-faded">Currently persuing Bachelor of Science in Web and Mobile Computing at the Rochester Institute of Technology. <br><br> At RIT she is an active member of Pokemon Club, Anime Club, Electronic Gaming Society and Women in Computing. <br>Currenly has the position of Webmaster of Women in Computing, an organization dedicated to promoting the success and advancement of women in their academic and professional careers, especially in technology. She maintains their website at <a href="http://wic.rit.edu" target="_blank" style="color:white;">wic.rit.edu.</a>
+              </p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">See what I can do</a>
           </div>
         </div>
       </div>
@@ -82,39 +83,32 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Skills</h2>
             <hr class="primary">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-              <h3>Sturdy Templates</h3>
-              <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+              <i class="fa fa-4x fa-user text-primary sr-icons"></i>
+              <h3>UX/UI Design</h3>
+              <p class="text-muted">Wireframing &#8226; InVision &#8226; User Testing</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-              <h3>Ready to Ship</h3>
-              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+              <i class="fa fa-4x fa-laptop text-primary sr-icons"></i>
+              <h3>Web Development</h3>
+              <p class="text-muted">Java &#8226; Python &#8226; PHP &#8226; SQL &#8226; Javascript &#8226; HTML/CSS &#8226; jQuery &#8226; Ionic (Apache Cordova)</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
+          <div class="col-lg-4 col-md-6 text-center">
             <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-              <h3>Up to Date</h3>
-              <p class="text-muted">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>Made with Love</h3>
-              <p class="text-muted">You have to make your websites with love these days!</p>
+              <i class="fa fa-4x fa-paint-brush text-primary sr-icons"></i>
+              <h3>Graphic Design</h3>
+              <p class="text-muted">Adobe Photoshop &#8226; InDesign &#8226; Illustrator </p>
             </div>
           </div>
         </div>
@@ -122,93 +116,251 @@
     </section>
 
     <section class="p-0" id="portfolio">
+    <div class="call-to-action bg-dark">
+      <div class="container text-center">
+        <h2>Portfolio and Projects</h2>
+      </div>
+    </div>
       <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
+        <div class="row no-gutter">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <a data-toggle="modal" data-target="#myModal1" class="portfolio-box">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Multidisciplinary
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Women in Computing: Arcade Cabinet
                   </div>
                 </div>
               </div>
             </a>
           </div>
+
+            
+<!-- Modal 1-->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header modal-color">
+        <h4 class="modal-title">Women in Computing: Arcade Cabinet</h4>
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>September 2016 - May 2017</h4>
+          <p>Part of the Women in Computing Projects committee. Lead a team of 5 to program a Raspberry Pi and build a retro bartop arcade cabinet. This project was displayed at Imagine RIT, RIT's Innovation and Creativity Festival. </p>
+          <img src="img/portfolio/Arcade_img/IMG_0445.JPG" class="portfolio-img">
+          <img src="img/portfolio/Arcade_img/IMG_0440.JPG" class="portfolio-img">
+          <img src="img/portfolio/Arcade_img/IMG_0457.JPG" class="portfolio-img">
+      </div>
+      <div class="modal-footer modal-color">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            
+            
+            
+    
+            
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <a data-toggle="modal" data-target="#myModal2" class="portfolio-box">
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Web Development
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Dynamically Generted Javascript Website
                   </div>
                 </div>
               </div>
             </a>
           </div>
+            
+<!-- Modal 2-->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header modal-color">
+        <h4 class="modal-title">Dynamically Generted Javascript Website</h4>
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>October 2016</h4>
+          <a href="http://serenity.ist.rit.edu/~lad4284/Portfolio/Project_1/" target="_blank" class="portfolio-link">View Project</a>
+          <p>Final project for Client Programming Course (ISTE-340). Dynamically generated using only Javascript. There is no html in this site. It's a "choose your profession" style picker based on the game Fantasy Life. It also uses cookies and local storage to track your previous choices.</p>
+          <img src="img/portfolio/DynamicJsc_img/code2.jpg" class="portfolio-img">
+          <img src="img/portfolio/thumbnails/2.jpg" class="portfolio-img">
+          <img src="img/portfolio/DynamicJsc_img/code.jpg" class="portfolio-img">
+          
+      </div>
+      <div class="modal-footer modal-color">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+     
+            
+            
+            
+            
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <a data-toggle="modal" data-target="#myModal3" class="portfolio-box">
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Graphic Design
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Jaguar Typography
                   </div>
                 </div>
               </div>
             </a>
           </div>
+            
+ <!-- Modal 3-->
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header modal-color">
+        <h4 class="modal-title">Jaguar Typography</h4>
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>March 2016</h4>
+          <p>Final project for New Media Design Digial Survey I (NMDE-111). Picture of a Jaguar made with typography. Created using Adobe Illustrator.</p>
+          <img src="img/portfolio/Jaguar_img/Jaguar.jpg" class="portfolio-img-lg">
+          
+          
+      </div>
+      <div class="modal-footer modal-color">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#myModal4">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Web Design
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Agness Wine Cellars Website
                   </div>
                 </div>
               </div>
             </a>
           </div>
+
+<!-- Modal 4-->
+<div id="myModal4" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header modal-color">
+        <h4 class="modal-title">Agness Wine Cellars Website</h4>
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>March 2017 - August 2017</h4>
+        <a href="https://www.agnesswinecellars.com/" target="_blank" class="portfolio-link">View Commision</a>
+          <p>Paid commision to redesign the Agness Wine Cellars Website. Worked with client on wireframing and the design protoypes. Created with wix.com </p>
+          <img src="img/portfolio/AWC_img/img3.png" class="portfolio-img">
+          <img src="img/portfolio/AWC_img/img2.png" class="portfolio-img">
+          <img src="img/portfolio/AWC_img/img1.png" class="portfolio-img">
+          
+          
+      </div>
+      <div class="modal-footer modal-color">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            
+            
+            
+            
+            
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <a data-toggle="modal" data-target="#myModal5" class="portfolio-box">
               <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Web and Mobile Design
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Completionist Dex
                   </div>
                 </div>
               </div>
             </a>
           </div>
+
+<!-- Modal 5-->
+<div id="myModal5" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header modal-color">
+        <h4 class="modal-title">Completionist Dex</h4>
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>September 2015 - December 2015</h4><br>
+        <a href="#" class="portfolio-link">View Project</a>
+          <p>New Media Design Digital Survey I Course Project, Web and Mobile I Course Final Project. Created App logo and website layout in Adobe Illustrator and Photoshop. Compeltionst dex is a website created to help people complete the pokedex from the Pokemon video game. Custom designed mobile menu. Partial implementation, unfinished.</p>
+          <img src="img/portfolio/Dex_img/img1.png" class="portfolio-img">
+          <img src="img/portfolio/Dex_img/img3.png" height="200px" style="padding-right:20px;padding-left:20px">
+          <img src="img/portfolio/Dex_img/img2.png" class="portfolio-img">
+          
+      </div>
+      <div class="modal-footer modal-color">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+            
+            
+            
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <a class="portfolio-box" data-toggle="modal" data-target="#myModal6">
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    UX/UI Design
                   </div>
                   <div class="project-name">
-                    Project Name
+                    Dinning Out
                   </div>
                 </div>
               </div>
@@ -217,33 +369,60 @@
         </div>
       </div>
     </section>
+      
+ <!-- Modal 6-->
+<div id="myModal6" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
 
-    <div class="call-to-action bg-dark">
-      <div class="container text-center">
-        <h2>Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-default btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header modal-color">
+        <h4 class="modal-title">Dining Out</h4>
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>April 2017</h4><br>
+        <a href="https://invis.io/3FAH0G6UB" target="_blank" class="portfolio-link">View Prototype</a>
+          <p>User Interface Design created using InVision and NinjaMock for an app that is a combination tip calculator and restaurant rater. App created from only a paragraph of requirements given by the professor from Foundations of Mobile Design (ISTE-252).</p>
+          <img src="img/portfolio/Dining_img/img1.png" class="portfolio-img-lg">
+          
+          
+      </div>
+      <div class="modal-footer modal-color">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+
+  </div>
+</div>     
+      
+      
+      
+      
+      
 
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Contact Me</h2>
             <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>123-456-6789</p>
-          </div>
           <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+            <i class="fa fa-envelope fa-4x sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:l.a.didonato@aol.com">l.a.didonato@aol.com</a>
             </p>
+          </div>
+            <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-github fa-4x sr-contact"></i>
+            <p><a href="https://github.com/ldidonato">ldidonato</a></p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-linkedin fa-4x sr-contact"></i>
+            <p><a href="https://www.linkedin.com/in/lauren-didonato">lauren-didonato</a></p>
           </div>
         </div>
       </div>
