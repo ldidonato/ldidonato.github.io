@@ -1,0 +1,152 @@
+/* CSS Style Sheet */
+body{
+    background-color: skyblue;
+    background-image: url("../Media/landscape.jpg");
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+button{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+#title{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+/*sidebar CSS */
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+#sidebar{
+    position: absolute;
+}
+form{
+    background-color: papayawhip; /*because of the name*/
+    padding:20px;
+    padding-bottom: 15px;
+    text-align:right;
+    width:250px;
+    border-radius: 15px;
+    box-shadow: 2px 2px dimgray;
+    font-size: 20px;
+    color: black;
+}
+#sendDiv{
+    text-align: center;
+    padding-top: 5px;
+}
+#Send{
+    background-color: crimson;
+    border-radius: 15px;
+    color:white;
+    font-size: 15px;
+    margin: 0 auto;
+}
+input[type=text]{
+    border-radius: 10px;
+    font-size: 15px;
+    color: gray;
+}
+#restartdiv{
+    margin-left: 190px;
+    margin-bottom: 50px;
+}
+#restartdiv button{
+    font-size: 15px;
+    color:white;
+    background-color: green;
+    padding:5px;
+    border-radius: 5px;
+    width:100px;
+}
+#cookiediv{
+    margin-top: 20px;
+    background-color: burlywood;
+    padding:20px;
+    width:250px;
+    border-radius: 15px;
+    box-shadow: 2px 2px dimgray;
+    font-size: 20px;
+    text-align: center;
+}
+#ldiv{
+    margin-top: 20px;
+    background-color: goldenrod;
+    padding:20px;
+    width:250px;
+    border-radius: 15px;
+    box-shadow: 2px 2px dimgray;
+    font-size: 20px;
+    text-align: center;
+}
+#textldiv{
+    color: saddlebrown;
+    font-size: 25px;
+    font-weight: bold;
+}
+#textcdiv{
+    color: saddlebrown;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*center CSS */
+#centerdiv{
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: darkseagreen;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    overflow: hidden;
+}
+select{
+    display: block;
+    margin: 0 auto;
+    background-color: cornsilk;
+    border: 1px solid gray;
+    font-size: 15px;
+    height: 35px;
+    width: 250px;
+}
+
+#Lbutton{
+    color: white;
+    background-color: goldenrod;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+}
+#lBtnDiv{
+    display: inline-block;
+    float: left;
+    padding-top: 100px;;
+    margin-left: 15%;
+}
+.lifeimg{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
