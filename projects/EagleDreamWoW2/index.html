@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Lauren DiDonato | EagleDream WoW API WebApp</title>
+     <!--[if lt IE 8 ]>
+        <script>
+            alert("You are using a browser lower than IE8. Please install a more modern browser!");
+            window.location = "http://outdatedbrowser.com/en";
+        </script>
+    <![endif]-->
+    
+    <!-- Links -->
+    <link  rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    
+    <!-- My scripts -->
+    <script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script src="getInfo.js"></script>
+</head>
+<body>
+    <section id="search">
+        <center>
+            <img src="images/logo.png" alt="EDT Logo">
+            <form id="form">
+                <input type="text" name="firstname" id="name" value="Regex"><br>
+                <input type="text" name="lastname" id="realm" value="Dalaran"><br>
+                <input type="button" value="Search" onclick="search()">
+            </form> 
+        </center>
+    </section>
+    
+    <section id="about">
+        <section id="stats" class="info">
+            <table>
+                <tr>
+                    <td>
+                        <h3>Attributes</h3>
+                        <div id="attributes" class="statTable"></div>
+                    </td>
+                    <td>
+                        <h3>Defense</h3>
+                        <div id="defense" class="statTable"></div>
+                    </td>
+                    <td rowspan="3">
+                        <h3 class="stat-name"><span id="charname"></span> &#183; <span id="realmname"></span></h3>
+                        <div id="profile"></div>
+                        <div id="info" class="statTable"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Attack</h3>
+                        <div id="attack" class="statTable"></div>
+                    </td>
+                    <td rowspan="2">
+                        <h3>Enchancements</h3>
+                        <div id="enchancements" class="statTable"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Spell</h3>
+                        <div id="spell" class="statTable"></div>
+                    </td>
+                </tr>
+            </table>
+            
+            
+            
+            
+        
+        </section>
+        <section id="items" class="info">
+            <h3>My Item Set</h3>
+            <div id="innerItems"></div>
+        </section>
+    
+    </section>
+    
+    
+</body>
+</html>

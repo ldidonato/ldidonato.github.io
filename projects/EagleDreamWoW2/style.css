@@ -1,0 +1,108 @@
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;   
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    margin-bottom: 70px;
+}
+center input{
+    background-color: #0b122f;
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    border: 1px solid #edbb6e;
+    width: 300px;
+    margin-bottom: 10px;
+    padding:2px;
+    
+}
+center img{
+    width: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+center input[type=button]{
+    border:none;
+    border-radius: 0px;
+    /*gradient background*/
+    background: #148980; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#148980, #3f7a8b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#148980, #3f7a8b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#148980, #3f7a8b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#148980, #3f7a8b); /* Standard syntax */
+    box-shadow: 1px 1px 1px #20202020;
+}
+#about{
+    width: 100%;
+    overflow: auto;
+    background-color:rgba(11, 18, 47, 0.65);
+    margin-top: 50px;  
+    border-top: 1px solid rgba(220, 220, 220, 0.3);
+    border-bottom: 1px solid rgba(220, 220, 220, 0.3);
+}
+.info{
+    background-color: rgba(11, 18, 47, 0.9);
+    border: 1px solid rgba(220, 220, 220, 0.3);
+    border-radius: 5px;
+    /*temp*/
+    width:50%;
+    margin-top:40px; 
+    margin-bottom:40px; 
+    margin-left: 20px;
+}
+#stats, #items{
+    float:left;
+    color:white;
+    height:400px;
+}
+#items{
+    color: #e8ae31;
+    width:30%;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+#items table, #stats table{
+    width:100%;
+    height:100%;
+    font-size: 12px;
+}
+#stats table h3{
+    font-size: 18px;
+}
+#stats{
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+.statTable{
+    text-align: right;
+    padding-right: 20px;
+}
+.stat-name{
+    text-align: left;
+    color: #e8ae31;
+}
+#stats td, #items td{
+    padding: 2px;
+}
+#stats td{
+    vertical-align: top;
+}
+#profile img{
+    border-radius: 5px;
+    padding-left: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e8ae31;
+}
+#stats h3{
+    margin-bottom: 5px;
+    padding-left: 4px;
+}
+
+
+
+
+
+
+
+
