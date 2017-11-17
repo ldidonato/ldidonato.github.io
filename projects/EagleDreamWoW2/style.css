@@ -5,23 +5,40 @@ body{
     margin: 0;
     margin-bottom: 70px;
 }
-center input{
+center input[type=text]{
     background-color: #0b122f;
-    color:white;
+    color:rgba(255, 255, 255, 0.6);
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
-    border: 1px solid #edbb6e;
     width: 300px;
     margin-bottom: 10px;
     padding:2px;
-    
+    border: 0.5px solid rgba(237, 187, 110, 0.6);
 }
-center img{
+center input:focus[type=text]{
+    outline-color:#edbb6e;
+    outline-style: solid;
+    outline-width: 1px;
+    border: 0.5px solid #edbb6e;
+    color:white;
+}
+#center1 img{
     width: 300px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+center input:focus[type=button]{
+    outline-color:#edbb6e;
+    outline-style: solid;
+    outline-width: 1px;
 }
 center input[type=button]{
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    width: 300px;
+    margin-bottom: 10px;
+    padding:2px;
     border:none;
     border-radius: 0px;
     /*gradient background*/
@@ -39,27 +56,25 @@ center input[type=button]{
     margin-top: 50px;  
     border-top: 1px solid rgba(220, 220, 220, 0.3);
     border-bottom: 1px solid rgba(220, 220, 220, 0.3);
+    visibility: hidden;
 }
 .info{
     background-color: rgba(11, 18, 47, 0.9);
     border: 1px solid rgba(220, 220, 220, 0.3);
     border-radius: 5px;
     /*temp*/
-    width:50%;
     margin-top:40px; 
     margin-bottom:40px; 
-    margin-left: 20px;
 }
 #stats, #items{
-    float:left;
     color:white;
-    height:400px;
+    height:420px;
 }
 #items{
     color: #e8ae31;
-    width:30%;
-    padding-left: 60px;
-    padding-bottom: 20px;
+    padding-top:25px;
+    padding-left:25px;
+    padding-right:25px;
 }
 #items table, #stats table{
     width:100%;
@@ -70,8 +85,9 @@ center input[type=button]{
     font-size: 18px;
 }
 #stats{
-    padding-left: 60px;
-    padding-bottom: 20px;
+    padding-top:25px;
+    padding-left:25px;
+    padding-right:25px;
 }
 .statTable{
     text-align: right;
@@ -94,11 +110,49 @@ center input[type=button]{
     margin-bottom: 10px;
     border: 1px solid #e8ae31;
 }
-#stats h3{
+#stats h3, #items h3{
     margin-bottom: 5px;
     padding-left: 4px;
+    margin-top: 0;
+    font-size: 18px;
 }
-
+#line{
+    height:90%;
+    border-left-style: solid;
+    border-left-color: white;
+    border-left-width: 1px;
+    
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from(rgba(220, 220, 220, 0.2)), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, rgba(220, 220, 220, 0.2), rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, rgba(220, 220, 220, 0.2), rgba(0, 0, 0, 0)) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, rgba(220, 220, 220, 0.2), rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to top, rgba(220, 220, 220, 0.2), rgba(0, 0, 0, 0)) 1 100%;
+}
+td#profileside{
+    padding-left:20px;
+}
+#close{
+    width: 50px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+.fit{
+    padding-left:1%;
+    padding-right: 1%;
+}
+#error{
+    font-weight: bold;
+    color:white;
+    background-color: firebrick;
+    width: 300px;
+    padding:2px;
+    visibility: hidden;
+}
 
 
 

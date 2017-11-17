@@ -1,11 +1,9 @@
 //api:  https://us.api.battle.net/wow/character/Dalaran/Regex?fields=appearance&locale=en_US&apikey=8neakgvt8krqfq8qcu7xdgk5uk6zuh2k
 
 function search(){
-    console.log("search called");
     var nameValue = document.getElementById("name").value;
     var realmValue = document.getElementById("realm").value;
-    fetchDataStats(nameValue, realmValue);
-    fetchDataItems(nameValue, realmValue);
+    validCharacter(nameValue, realmValue);
 }//end search
 
 
@@ -35,8 +33,18 @@ function fetchDataStats(nameVal, realmVal){
         
         //Attack
         var string= "<table>";
-        string += makeStatRow("Damage", data.stats.mainHandDmgMin+" - "+data.stats.mainHandDmgMax);
+        if (data.stats.mainHandDmgMin == -1 || data.stats.mainHandDmgMax == -1){
+            string += makeStatRow("Damage", "--");
+        }else{
+            string += makeStatRow("Damage", data.stats.mainHandDmgMin+" - "+data.stats.mainHandDmgMax);
+        }
         string += makeStatRow("Speed", data.stats.mainHandSpeed);
+        if (data.stats.rangedDmgMin == -1 || data.stats.rangedDmgMax == -1){
+            string += makeStatRow("Ranged Damage", "--");
+        }else{
+            string += makeStatRow("Ranged Damage", data.stats.rangedDmgMin+" - "+data.stats.rangedDmgMax);
+        }
+        string += makeStatRow("Ranged Speed", data.stats.rangedSpeed);
         $('#attack').html(string+"</table>");
         
         //Spell
@@ -71,6 +79,7 @@ function fetchDataStats(nameVal, realmVal){
         var string= "<table>";
         string += makeStatRow("Level", data.level);
         string += makeStatRow("Health", data.stats.health);
+        string += makeStatRow("Power Type", data.stats.powerType);
         $('#info').html(string+"</table>");
         
         
@@ -119,14 +128,34 @@ function makeItemRow(name, id){
 }//end makeItemRow
 
 function makeStatRow(name, id){
-    if(id == undefined){
+    if(id == undefined || id == -1){
         return "<tr><td class='stat-name'>"+name+"</td><td>--</td></tr>";
     }else{
         return "<tr><td class='stat-name'>"+name+"</td><td>"+id+"</td></tr>";
     }
 }//end makeStatRow
 
-
+function validCharacter(nameValue, realmValue){
+    const url = 'https://us.api.battle.net/wow/character/'+realmValue+'/'+nameValue+'?fields=stats&locale=en_US&apikey=8neakgvt8krqfq8qcu7xdgk5uk6zuh2k';
+    fetch(url)
+        .then((resp) => resp.json())
+        .then(function(data) { 
+            if(data.status == "nok"){
+                document.getElementById("about").style.visibility = "hidden";
+                document.getElementById("error").style.visibility = "visible";
+                $('#error').html(data.reason);
+            }else{
+                document.getElementById("error").style.visibility = "hidden";
+                fetchDataStats(nameValue, realmValue);
+                fetchDataItems(nameValue, realmValue);
+                document.getElementById("about").style.visibility = "visible";
+            }
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
+    
+}//end validCharacter
 
 
 

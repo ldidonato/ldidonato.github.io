@@ -12,6 +12,7 @@
     
     <!-- Links -->
     <link  rel="stylesheet" type="text/css" href="style.css">
+     <link  rel="stylesheet" type="text/css" href="grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
     
     <!-- My scripts -->
@@ -20,18 +21,23 @@
 </head>
 <body>
     <section id="search">
-        <center>
+        <center id="center1">
             <img src="images/logo.png" alt="EDT Logo">
             <form id="form">
-                <input type="text" name="firstname" id="name" value="Regex"><br>
-                <input type="text" name="lastname" id="realm" value="Dalaran"><br>
+                <input type="text" name="firstname" id="name" value="Character Name"><br>
+                <input type="text" name="lastname" id="realm" value="Realm Name"><br>
                 <input type="button" value="Search" onclick="search()">
-            </form> 
+            </form>
+            <div id="error"></div>
         </center>
     </section>
     
     <section id="about">
-        <section id="stats" class="info">
+        <div class="col-1 fit">
+            &nbsp;
+        </div>
+        <div class="col-6 fit">
+            <section id="stats" class="info">
             <table>
                 <tr>
                     <td>
@@ -42,10 +48,11 @@
                         <h3>Defense</h3>
                         <div id="defense" class="statTable"></div>
                     </td>
-                    <td rowspan="3">
+                    <td rowspan="3"><div id="line"></div></td>
+                    <td id="profileside" rowspan="3">
                         <h3 class="stat-name"><span id="charname"></span> &#183; <span id="realmname"></span></h3>
                         <div id="profile"></div>
-                        <div id="info" class="statTable"></div>
+                        <div id="info" class="statTable"text></div>
                     </td>
                 </tr>
                 <tr>
@@ -64,20 +71,28 @@
                         <div id="spell" class="statTable"></div>
                     </td>
                 </tr>
-            </table>
-            
-            
-            
-            
-        
+            </table>        
         </section>
-        <section id="items" class="info">
+        </div>
+        <div class="col-4 fit">
+            <section id="items" class="info">
             <h3>My Item Set</h3>
             <div id="innerItems"></div>
         </section>
-    
+        </div>
+        <div class="col-1 fit">
+            <center>
+                <img id= "close" src="images/close.png" alt="X"/>
+            </center>
+        </div>
     </section>
     
     
 </body>
 </html>
+<script>
+    document.getElementById("close").onclick = function() {
+        document.getElementById("about").style.visibility = "hidden";
+        console.log("close called");
+    };
+</script>
