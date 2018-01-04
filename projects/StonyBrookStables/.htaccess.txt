@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^folder1(.*)$ http://www.stonybrookstables.us/$1 [L,R=301]
+
+</IfModule>
