@@ -10,7 +10,7 @@ function search(){
 //name = name of charcater
 //realm = realm of charcater
 function fetchDataStats(nameVal, realmVal){
-    const url = 'https://us.api.battle.net/wow/character/'+realmVal+'/'+nameVal+'?fields=stats&locale=en_US&apikey=8neakgvt8krqfq8qcu7xdgk5uk6zuh2k';
+    const url = 'https://us.api.blizzard.com/wow/character/'+realmVal+'/'+nameVal+'?fields=stats&locale=en_US&access_token=USbUdIsBkbvkoxNljx11yuCJpO8uME6g6e';
     fetch(url)
       .then((resp) => resp.json())
       .then(function(data) {
@@ -90,7 +90,7 @@ function fetchDataStats(nameVal, realmVal){
 }//end fetchData
 
 function fetchDataItems(nameVal, realmVal){
-    const url = 'https://us.api.battle.net/wow/character/'+realmVal+'/'+nameVal+'?fields=items&locale=en_US&apikey=8neakgvt8krqfq8qcu7xdgk5uk6zuh2k';
+    const url = 'https://us.api.blizzard.com/wow/character/'+realmVal+'/'+nameVal+'?fields=items&locale=en_US&access_token=USbUdIsBkbvkoxNljx11yuCJpO8uME6g6e';
     fetch(url)
       .then((resp) => resp.json())
       .then(function(data) {
@@ -136,7 +136,7 @@ function makeStatRow(name, id){
 }//end makeStatRow
 
 function validCharacter(nameValue, realmValue){
-    const url = 'https://us.api.battle.net/wow/character/'+realmValue+'/'+nameValue+'?fields=stats&locale=en_US&apikey=8neakgvt8krqfq8qcu7xdgk5uk6zuh2k';
+    const url = 'https://us.api.blizzard.com/wow/character/'+realmValue+'/'+nameValue+'?fields=stats&locale=en_US&access_token=USbUdIsBkbvkoxNljx11yuCJpO8uME6g6e';
     fetch(url)
         .then((resp) => resp.json())
         .then(function(data) { 
